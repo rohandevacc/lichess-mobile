@@ -36,7 +36,7 @@ jobs:
           echo "storeFile=${{ github.workspace }}/android/key.jks" >> android/key.properties
         
       - name: Build APK
-        run: flutter build apk --release
+        run: flutter build apk --release --dart-define=LICHESS_HOST=lichess.org --dart-define=LICHESS_WS_HOST=lichess.org
         
       - name: Upload APK
         uses: actions/upload-artifact@v4
