@@ -145,3 +145,8 @@ flutter_native_splash:
 
   color_dark: "#000000"
   image_dark: assets/images/logo-white.webp
+
+dependency_overrides:
+  chessground:
+    git:
+      url: https://github.com/rohandevacc/flutter-chessground.git
